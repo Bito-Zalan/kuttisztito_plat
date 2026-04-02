@@ -68,6 +68,8 @@ footer{
     background: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
+    position: relative;
+    text-align: left;
 }
 
 .about {
@@ -107,6 +109,69 @@ input, textarea {
 .hatekony{
     margin-bottom: 30px;
 }
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.card-header h3 {
+    flex: 1;
+}
+
+.more-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.toggle-area {
+    position: relative;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #111;
+    cursor: pointer;
+    user-select: none;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    text-align: left;
+    padding-bottom: 35px;
+}
+
+.reszlet{
+    border-bottom: 2px solid white;
+    margin-bottom: 5px;
+}
+.arrow {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+.card.active .arrow {
+    transform: rotate(180deg);
+}
+
+.details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    margin-top: 10px;
+}
+
+.details p {
+    padding: 5px 0;
+    background: transparent; /* ne legyen kék */
+}
+
 
 .hero {
     position: relative;
@@ -211,4 +276,76 @@ footer {
         font-size: 1rem;
         margin-bottom: 5px;
     }
+}
+
+@media(min-width: 769px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        align-items: start;
+    }
+
+    /* Ha a Kúttisztítás kártya aktív, legyen teljes szélesség */
+    #mainCard.active {
+        grid-column: 1 / -1; /* teljes sor */
+        z-index: 10; /* hogy felül legyen a többi */
+    }
+
+    /* A lenyíló rész sorkizárt */
+    #mainCard.active .details {
+        text-align: justify;
+    }
+}
+
+/* Galéria rács */
+.gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* Minden kép doboz egyforma méretű */
+.gallery .img-box {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* A képek kitöltik a dobozt, nem torzulnak */
+.gallery .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Szép hover effekt */
+.gallery .img-box img:hover {
+    transform: scale(1.05);
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* alapból rejtett */
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    color: black;
+}
+
+#scrollTopBtn:hover {
+    transform: scale(1.1);
+    
 }

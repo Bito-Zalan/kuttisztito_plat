@@ -1,121 +1,156 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kúttisztítás Országosan</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <div class="container nav">
-        <h1 class="site-title">Kúttisztítás Országosan</h1>
-
-        <section id="contacts" class="contacts">
-            <h2>Elérhetőségek:</h2>
-            
-            <p class="contact-row">
-                <span>Email:</span> gardos1975@gmail.com
-            </p>
-            <p class="contact-row">
-                <span>Telefonszám:</span> +36 70 215 3674
-            </p>
-        </section>
-
-    </div>
-</header>
-
-<section class="hero">
-    <div class="container hero-content">
-        <h2>Tiszta víz, biztonságos kút</h2>
-        <p class="hatekony">Professzionális kúttisztítás gyorsan és hatékonyan.</p>
-        <a href="#gallery" class="btn">Fényképek munkáinkról</a>
-    </div>
-</section>
-
-<section class="services container">
-    <h2>Szolgáltatások</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Kúttisztítás</h3>
-            <p>Vállajuk ásott és fúrt kutak tisztítását, iszaptalanítását és egyéb szennyeződések eltávolítását.</p>
+    <header>
+        <div class="container nav">
+            <h1 class="site-title">Kúttisztítás Országosan</h1>
+            <section class="contacts">
+                <h2>Elérhetőségek:</h2>
+                <p><b>Email:</b> gardos1975@gmail.com</p>
+                <p><b>Telefon:</b> +36 70 215 3674</p>
+            </section>
         </div>
-        <div class="card">
-            <h3>Fertőtlenítés</h3>
-            <p>Baktériummentes, tiszta víz.</p>
-        </div>
-        <div class="card">
-            <h3>Karbantartás</h3>
-            <p>Hosszú távú megoldások.</p>
-        </div>
-    </div>
-</section>
+    </header>
 
-<section class="about">
-    <div class="container">
-        <h2>Miért minket válasszon?</h2>
-        <p>Sok év tapasztalat, modern eszközök, gyors válasz.</p>
-    </div>
-</section>
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Tiszta víz, biztonságos kút</h2>
+            <p class="hatekony">Professzionális kúttisztítás gyorsan és hatékonyan.</p>
+            <a href="#gallery" class="btn">Fényképek munkáinkról</a>
+        </div>
+    </section>
 
-<section id="gallery" class="gallery container">
+    <section class="services container">
+        <h2>Szolgáltatások</h2>
+        <div class="grid">
+
+            <!-- KÚTTISZTÍTÁS -->
+            <div class="card" id="mainCard">
+                <h3>Kúttisztítás</h3>
+                <p>Vállajuk <b>ipari</b>, <b>ásott</b> és <b>fúrt</b> kutak tisztítását, iszaptalanítását és egyéb
+                    szennyeződések eltávolítását.</p>
+
+                <div class="details">
+                    <p class="reszlet">
+                        <b>Ipari kutak tisztítása:</b><br>
+                        Ipari kutak vegyszeres mangántalanítása, fertőtlenítése. Ipari kutak gépi tisztítása, speciális
+                        tisztító fejekkel.<br>
+                        A már savtalanított, vastalanított és mangántalanított vizet a fogyasztóhoz vezetés előtt
+                        fertőtleníteni kell speciális fertőtlenítő szerekkel.<br>
+                        Szintén oxidáció szükséges az oldott mangánvegyületek oldhatatlanná alakításához. Pusztán a
+                        levegőztetés azonban nem minden esetben elég hatásos.<br>
+                        A kutak vizét levegőztetve eltávozik az agresszív CO2, egyidejűleg a víz felveszi a
+                        vastalanításhoz szükséges oxigént.
+                    </p>
+                    <p class="reszlet">
+                        <b>Tisztító szivattyúzás</b><br>
+                        A tisztítószivattyúzás célja a vízadó rétegben a kút palástja körüli térségből az áramlást gátló
+                        finom kőzetszemcsék (iszap,homok,agyag)eltávolítása,és így a kút körüli térben természetes szűrő
+                        kiképzése,fenntartása. A talaj szemcseösszetételétől,és egyenlőtlenségi fokától függ,hogy a
+                        rétegből milyen méretű szemcséket,és milyen mennyiségben kell eltávolítani. Nyilvánvaló,hogy egy
+                        homokos kavicsrétegből igyekezni kell a homok túlnyomó részét eltávolítani,míg egy apró
+                        szemcsézetű réteg esetében óvakodni kell attól,hogy erélyes szivattyúzással esetleg a réteg
+                        összeomlik. Különösen az egyenlőtlenségi fok szerepét kell hangsúlyozni.Egy vegyes szemcsézetű
+                        rétegből aránylag sok apró szemcsét tudunk eltávolítani,jó rétegvíz alakul ki,a
+                        tisztítószivattyúzással többszörösére növelhető a vízhozam.
+                    </p>
+                    <p class="reszlet">
+                        <b>A tisztítószivattyúzás módozatai</b><br>
+                        centrifugál szivattyúval csak kb.6-7 m-re tudunk vízszintet leszívni.
+                        a tisztító kompresszorozás ennél nagyobb mélységből is felszínre hozza a vizet ,és nagyobb
+                        tisztítási fokot lehet elérni.(mamutszivattyú elve)
+                        Mamutszivattyú elve:
+                        A vizet a szerkezet sűrített levegővel emeli.A levegővel keveredett víz sűrűsége kisebb,mint a
+                        csövet körülvevő vízé,ezért a kisebb sűrűségű levegő-víz-iszap keverék a csőben felemelkedik,és
+                        a
+                        felső nyíláson kiömlik. Ez az intenzív vízkitermelés biztosítja,hogy a szívócső környezetében
+                        lévő
+                        iszap távozzék a kútból.Ezt követően a szokásos vízkitermeléskor tiszta víz hagyja el a kutat.
+                        Ezen
+                        kívül speciális iszapoló eszközök,tisztító fejek alkalmazására is sor kerülhet.
+                    </p>
+                    <p class="reszlet">
+                        <b>Ásott kút tisztítása</b><br>
+                        A tisztítószivattyúzással a vízadó kőzetből a finomabb iszapos,homokos részeket el kell
+                        távolítani.A tisztítószivattyúzás után alpintechnikával kézi erővel eltávolítható a kútból az
+                        iszap,ill.darabos szennyeződések.Az igényesebb célra készült,vagy szennyezett kutakat tisztítás
+                        után fertőtleníteni kell.</br>
+                        Hatása a kút állapotától függően:<br>
+                        <b>- vízhozam javulása</b><br>
+                        <b>- kút letisztulása.</b>
+                    </p>
+                    <p class="reszlet">
+                        <b>Fúrt kút tisztítása</b><br>
+                        A fúrt kút rendszerének tisztítása,átmosása ipari eszközökkel,speciális iszapolókkal,tisztító
+                        fejekkel történik,szükség szerint.<br>
+                        Hatása a kút állapotától függően:<br>
+                        <b>- vízhozam javulása</b><br>
+                        <b>- kút letisztulása.</b>
+                    </p>
+                </div>
+
+                <div class="toggle-area">
+                    <span class="text">Részletek</span>
+                    <span class="arrow">▼</span>
+                </div>
+            </div>
+
+            <!-- FERTŐTLENÍTÉS -->
+            <div class="card">
+                <h3>Fertőtlenítés</h3>
+                <p>Baktériummentes, tiszta víz.</p>
+            </div>
+
+            <!-- KARBANTARTÁS -->
+            <div class="card">
+                <h3>Karbantartás</h3>
+                <p>Hosszú távú megoldások.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>Miért minket válasszon?</h2>
+            <p>Sok év tapasztalat, modern eszközök, gyors válasz.</p>
+        </div>
+    </section>
+
+   <section id="gallery" class="gallery container">
     <h2>Galéria</h2>
     <div class="grid">
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
-        <div class="img-box"></div>
+        <div class="img-box"><img src="galeries/munkak/04fa9738-fbeb-44ef-b5b0-0ea2ae90d8fb.jpg" alt="Kép 1"></div>
+        <div class="img-box"><img src="galeries/munkak/55ab80ef-7f37-4fad-96c1-5d0ec16146ab.jpg" alt="Kép 2"></div>
+        <div class="img-box"><img src="galeries/munkak/64e45b62-6e75-47b7-a9cb-9186a0c931c1.jpg" alt="Kép 3"></div>
+        <div class="img-box"><img src="galeries/munkak/23819eb1-1ec6-42a1-8848-72965f6733dc.jpg" alt="Kép 4"></div>
+        <div class="img-box"><img src="galeries/munkak/c7b58c25-88df-4402-a14f-2ea036e6b4bf.jpg" alt="Kép 5"></div>
+        <div class="img-box"><img src="galeries/munkak/ebbd2048-4c94-4cd4-9cf0-0b194b795b45.jpg" alt="Kép 6"></div>
+        <div class="img-box"><img src="galeries/munkak/f911b698-f336-4b49-8fb8-27cd21a6d6ee.jpg" alt="Kép 7"></div>
+        <div class="img-box"><img src="galeries/munkak/f308a705-5869-4d8c-ade8-04d28f659923.jpg" alt="Kép 8"></div>
+        <div class="img-box"><img src="galeries/munkak/e7420422-0923-4f6c-935a-6c24ae48c3c2.jpg" alt="Kép 9"></div>
+        <div class="img-box"><img src="galeries/munkak/1c589d44-63e4-407e-83cb-ab96f6314be2.jpg" alt="Kép 10"></div>
+        <div class="img-box"><img src="galeries/munkak/51994dea-8e27-477e-a818-a9b6c34e96f1.jpg" alt="Kép 10"></div>
+        <div class="img-box"><img src="galeries/munkak/df38f420-4b6b-4d45-b86d-e6d48f0a6977.jpg" alt="Kép 10"></div>
     </div>
 </section>
 
-<script>
-    const form = document.getElementById('contactForm');
-    const successMessage = document.getElementById('successMessage');
+    <footer>
+        <p>© 2026 Kúttisztítás<br>
+        Minden jog fenntartva.</p>
+    </footer>
 
-    form.addEventListener('submit', function(e){
-        e.preventDefault(); // megakadályozza az oldal újratöltését
-
-        const formData = new FormData(form);
-        fetch(form.action, {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-            if(response.ok){
-                successMessage.style.display = 'block';
-                form.reset();
-            } else {
-                alert("Valami hiba történt. Kérjük, próbáld újra.");
-            }
-        }).catch(error => {
-            alert("Valami hiba történt. Kérjük, próbáld újra.");
-        });
-    });
-</script>
-
-<footer>
-    <p>© 2026 Kúttisztítás</p>
-</footer>
-
+    <script src="script.js"></script>
+    <button id="scrollTopBtn">↑</button>
 </body>
+
 </html>
