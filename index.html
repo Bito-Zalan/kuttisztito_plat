@@ -10,14 +10,19 @@
 
 <header>
     <div class="container nav">
-        <h1>Kúttisztítás Országosan</h1>
+        <h1 class="site-title">Kúttisztítás Országosan</h1>
+
         <section id="contacts" class="contacts">
-        <h2>Elérhetőségek</h2>
-        <p>Email: gardos1975@gmail.com</p>
-        <p>Telefonszám: +36 70 215 3674</p>
-    </div>
-</section>
-        <!-- <a href="#contacts" class="btn">Elérhetőségek</a> -->
+            <h2>Elérhetőségek:</h2>
+            
+            <p class="contact-row">
+                <span>Email:</span> gardos1975@gmail.com
+            </p>
+            <p class="contact-row">
+                <span>Telefonszám:</span> +36 70 215 3674
+            </p>
+        </section>
+
     </div>
 </header>
 
@@ -25,7 +30,6 @@
     <div class="container hero-content">
         <h2>Tiszta víz, biztonságos kút</h2>
         <p class="hatekony">Professzionális kúttisztítás gyorsan és hatékonyan.</p>
-        <a href="#contact" class="btn">Ajánlatot kérek</a>
     </div>
 </section>
 
@@ -62,22 +66,6 @@
         <div class="img-box"></div>
     </div>
 </section>
-
-<section id="contact" class="contact">
-    <div class="container">
-        <h2>Ajánlat Kérése</h2>
-        <!-- Formspree form -->
-        <form action="https://formspree.io/f/XXXXX" method="POST"> 
-            <input type="text" name="name" placeholder="Név" required>
-            <input type="email" name="_replyto" placeholder="Email" required>
-            <input type="tel" name="phone" placeholder="Telefonszám" required>
-            <textarea name="message" placeholder="Üzenet"></textarea>
-            <button type="submit" class="btn">Küldés</button>
-        </form>
-    </div>
-</section>
-
-
 
 <script>
     const form = document.getElementById('contactForm');
